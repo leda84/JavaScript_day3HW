@@ -1,0 +1,14 @@
+body {
+    background-image: url("/images/glen-wheeler-gN3oQVVJDYo-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+
+.container {
+    background-color: gray;
+}
+
+#racerTable {
+    color: white;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Racecar API</title>
+</head>
+<body>
+    <h1 id="top">Racecar API Call</h1>
+    <!-- this section is for using the DOM to grab form data -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <form name ="testData" id="testDataForm">
+                    <label for="round">Season:</label>
+                    <input type="text" name="season" id="season">
+                
+                    <label for="round">Round:</label>
+                    <input type="text" name="round" id="round">
+                
+                    <button type="submit" class="btn btn-primary" id="submitButton" onclick="loadData()">Submit</button>
+                
+                </form>
+                <section class="list-group racer-list">
+                    <table class='table table-striped' style='display: none;' id="racerTable">
+                        <thead>
+                            <tr>
+                                <th scope='col'>Position</th>
+                                <th scope='col'>Name</th>
+                                <th scope='col'>Family Name</th>
+                                <th scope='col'>Nationality</th>
+                                <th scope='col'>Sponsor</th>
+                                <th scope='col'>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody id="racerTableBody"></tbody>
+                    </table>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
